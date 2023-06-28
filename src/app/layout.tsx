@@ -1,7 +1,9 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./globals.css";
-import { Alegreya } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
-const font = Alegreya({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Rasmus Eliasson",
@@ -15,7 +17,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body
+        className={`${font.className} m-0 p-0 box-border bg-colors-white dark:bg-colors-purlpe`}
+      >
+        <>
+          <Header />
+        </>
+        {children}
+        <>
+          <Footer />
+        </>
+      </body>
     </html>
   );
 }

@@ -5,6 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     colors: {
       colors: {
@@ -16,9 +17,6 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
-      },
       boxShadow: {
         container: "0 10px 15px rgba(0, 0, 0, 0.3)",
         img: "2px 10px 14px 0px rgba(38,37,37,0.75)",

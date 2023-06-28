@@ -1,37 +1,76 @@
-import React from "react";
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 export default function Header() {
+  const [theme, setTheme] = useState("light");
+  const [themeIcon, setThemeIcon] = useState(false);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  });
+
+  const handleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const handleThemeIcon = () => {
+    setThemeIcon(!themeIcon);
+  };
+
   return (
     <header className="flex justify-between items-center text-colors-darkPurple">
       <div className="h1-name ml-6 text-xl">
-        <a href="#">
+        <Link href={"#"}>
           <h1>Rasmus Eliasson</h1>
-        </a>
+        </Link>
       </div>
 
       <nav className="flex p-4 items-center">
-        <div className="flex items-center space-x-2 text-colors-darkPurple">
-          <input type="checkbox" id="toggle" className="hidden" />
-          <label
-            htmlFor="toggle"
-            className="relative flex items-center cursor-pointer"
+        <div className="flex items-center space-x-2 text-colors-darkPurple border-2 border-r-colors-purlpe rounded-2xl p-1 shadow-md">
+          <div
+            className="flex"
+            onClick={() => {
+              handleThemeIcon();
+              handleTheme();
+            }}
           >
-            <div className="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
-            <div className="toggle-dot absolute w-6 h-6 bg-white inset-y-0 left-0"></div>
-            <i className="toggle-icon moon fas fa-moon absolute w-4 h-4 fill-current mt-1 ml-1"></i>
-            <i className="toggle-icon sun fas fa-sun hidden absolute w-4 h-4 fill-current mt-1 ml-1 translate-x-4"></i>
-          </label>
+            <Image
+              src={"/icons/light-mode.svg"}
+              alt="button for lightmode"
+              width={20}
+              height={20}
+            />
+
+            <span
+              className={`w-5 h-5 rounded-full bg-colors-darker relative duration-200 ${
+                !themeIcon ? "-right-5" : "right-5"
+              }`}
+            ></span>
+            <Image
+              src={"/icons/dark-mode.svg"}
+              alt="button for darkmode"
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
 
         <ul className="hidden sm:flex justify-center items-center">
           <li>
-            <a href=""></a>Om mig
+            <Link href=""></Link>Om mig
           </li>
           <li>
-            <a href=""></a>Mina project
+            <Link href=""></Link>Mina project
           </li>
           <li>
-            <a href=""></a>Kontakta mig
+            <Link href=""></Link>Kontakta mig
           </li>
         </ul>
         <div id="menu-icon">
@@ -46,15 +85,15 @@ export default function Header() {
               className="p-4 md:p-0 mt-4 md:hidden w-full border border-colors-darkPurple rounded-lg"
             >
               <li className="my-4">
-                <a href="#" aria-current="page">
+                <Link href="#" aria-current="page">
                   Om Mig
-                </a>
+                </Link>
               </li>
               <li className="my-4">
-                <a href="#">Mina Projekt</a>
+                <Link href="#">Mina Projekt</Link>
               </li>
               <li className="my-4">
-                <a href="#">Kontakta Mig</a>
+                <Link href="#">Kontakta Mig</Link>
               </li>
             </ul>
           </div>

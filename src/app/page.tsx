@@ -9,19 +9,15 @@ import AboutMe from "./components/AboutMe";
 
 export default function Home() {
   return (
-    <body className="m-0 p-0 box-border bg-colors-white font-montserrat">
-      <Header />
-      <main className="flex flex-col items-center">
-        <Hero />
-        <AboutMe />
+    <main className="flex flex-col items-center">
+      <Hero />
+      <AboutMe />
 
-        <Containers />
+      <Containers />
 
-        <Projects />
+      <Projects />
 
-        <Contact />
-      </main>
-      <Footer />
-    </body>
+      <Contact />
+    </main>
   );
 }
