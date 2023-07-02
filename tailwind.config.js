@@ -19,6 +19,15 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        headerAnimation: "slideDown 0.7s ease-in-out",
+      },
+      keyframes: {
+        slideDown: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
       boxShadow: {
         container: "0 10px 15px rgba(0, 0, 0, 0.3)",
         img: "2px 10px 14px 0px rgba(38,37,37,0.75)",
