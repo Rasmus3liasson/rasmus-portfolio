@@ -1,7 +1,5 @@
-import Image from "next/image";
-import Header from "./components/Header/page";
 import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+
 import Containers from "./components/Containers/page";
 import Contact from "./components/Containers/Contact";
 import Projects from "./components/Containers/Projects/page";
