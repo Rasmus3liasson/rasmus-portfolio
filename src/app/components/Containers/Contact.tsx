@@ -1,13 +1,104 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [organisation, setOrganisation] = useState("");
+  const [message, setMessage] = useState("");
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  // send to preferred mail client
+  const handleMailInput = () => {
+    const email = "ras.muse@hotmail.com";
+    const subject = `Från: ${firstName} ${lastName} ${organisation}`;
+
+    const mailTo = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(message)}`;
+
+    if (firstName && lastName && message !== "") {
+      window.location.href = mailTo;
+    }
+  };
+
+  function errorBorder(inputValue: string) {
+    if (buttonClicked && inputValue === "") {
+      return "border-2 border-colors-red";
+    }
+  }
   return (
     <section id="contact" className="container mt-12">
       <h3 className="text-4xl text-center">Kontakt</h3>
-      <div>
-        <p className="mt-5 mb-5">Är ute efter en väg in i branchen vare sig</p>
-      </div>
+
+      <form
+        className="flex justify-center items-center my-8 flex-col"
+        action=""
+      >
+        <div className="md:flex items-center gap-6 md:gap-12">
+          <div className="flex flex-col gap-9 md:gap-12">
+            <div>
+              <input
+                onChange={(event) => {
+                  setFirstName(event.target.value);
+                }}
+                className={`${errorBorder(firstName)} input`}
+                autoComplete="on"
+                type="text"
+                required
+                placeholder="Förnamn:"
+              />
+            </div>
+            <div>
+              <input
+                onChange={(event) => {
+                  setLastName(event.target.value);
+                }}
+                className={`${errorBorder(lastName)} input`}
+                autoComplete="on"
+                placeholder="Efternamn:"
+                required
+              />
+            </div>
+            <div>
+              <input
+                onChange={(event) => {
+                  setOrganisation(event.target.value);
+                }}
+                className="input"
+                autoComplete="on"
+                placeholder="Organisation *"
+              />
+              <p className="text-sm italic text-colors-darker justify-start flex ml-6 md:ml-0 mt-2">
+                * inte nödvändligt
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 mb-6 ">
+            <textarea
+              onChange={(event) => {
+                setMessage(event.target.value);
+              }}
+              className={`py-1 px-2 rounded-xl ${errorBorder(message)}`}
+              cols={30}
+              rows={8}
+              placeholder="Ditt Meddelande:"
+            ></textarea>
+          </div>
+        </div>
+        <button
+          onClick={(event) => {
+            event.preventDefault();
+            setButtonClicked(!buttonClicked);
+            handleMailInput();
+          }}
+          className="text-colors-white bg-gradient-to-r from-colors-purlpe to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 duration-200 ease-in hover:scale-103 md:w-52 md:text-lg"
+        >
+          Skicka
+        </button>
+      </form>
 
       <nav>
         <ul className="flex justify-center scale-105 gap-5">

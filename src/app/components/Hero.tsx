@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Hero() {
@@ -17,14 +18,6 @@ export default function Hero() {
           alt="En
                bild på mig"
         />
-      </div>
-      <div className="flex justify-center mt-28 mb-14">
-        <a
-          className="text-colors-white bg-gradient-to-r from-colors-purlpe to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 duration-200 ease-in hover:scale-103"
-          href="mailto:ras.muse@hotmail.com"
-        >
-          Kontakta mig
-        </a>
       </div>
     </section>
   );

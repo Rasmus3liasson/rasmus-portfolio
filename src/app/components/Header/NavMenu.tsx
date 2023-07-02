@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import React, { useState } from "react";
 
 export default function NavMenu() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
   const handleMenu = () => {
     setShowMenu(!showMenu);
