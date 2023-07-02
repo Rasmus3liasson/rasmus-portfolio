@@ -15,7 +15,7 @@ module.exports = {
         purlpe: "#976bed",
         darkPurple: "#730080",
         red: "#ed493d",
-        greyLight: "#e0e0e0",
+        greyLight: "#d7d7d7",
       },
     },
     extend: {

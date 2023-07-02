@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Contact() {
@@ -18,6 +19,8 @@ export default function Contact() {
     const mailTo = `mailto:${email}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(message)}`;
+
+    setButtonClicked(true);
 
     if (firstName && lastName && message !== "") {
       window.location.href = mailTo;
@@ -71,7 +74,7 @@ export default function Contact() {
                 autoComplete="on"
                 placeholder="Organisation *"
               />
-              <p className="text-sm italic text-colors-darker justify-start flex ml-6 md:ml-0 mt-2">
+              <p className="text-sm italic text-colors-greyLight justify-start flex ml-6 md:ml-0 mt-2">
                 * inte nödvändligt
               </p>
             </div>
@@ -89,9 +92,9 @@ export default function Contact() {
           </div>
         </div>
         <button
+          type="submit"
           onClick={(event) => {
             event.preventDefault();
-            setButtonClicked(!buttonClicked);
             handleMailInput();
           }}
           className="text-colors-white bg-gradient-to-r from-colors-purlpe to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 duration-200 ease-in hover:scale-103 md:w-52 md:text-lg"
@@ -101,43 +104,48 @@ export default function Contact() {
       </form>
 
       <nav>
+        <p className="mb-2 text-lg">Andra kontaktvägar</p>
+
         <ul className="flex justify-center scale-105 gap-5">
-          <a
-            className="hover-contact-icon"
-            href="https://www.instagram.com/rasmuseeliasson/"
-          >
-            <Image
-              src={"/icons/instagram.svg"}
-              alt="instagram"
-              width={50}
-              height={50}
-            />
-          </a>
-          <a
-            className="hover-contact-icon"
-            href="https://www.linkedin.com/in/rasmus-eliasson-290789247/"
-          >
-            <Image
-              src={"/icons/linkedin.svg"}
-              alt="linkedIn"
-              width={50}
-              height={50}
-            />
-          </a>
-          <a
-            className="hover-contact-icon"
-            href="https://github.com/Rasmus3liasson?tab=repositories"
-          >
-            <Image
-              src={"/icons/github.svg"}
-              alt="github"
-              width={50}
-              height={50}
-            />
-          </a>
-          <a className="hover-contact-icon" href="mailto:ras.muse@hotmail.com">
-            <Image src={"/icons/mail.svg"} alt="mail" width={50} height={50} />
-          </a>
+          <li>
+            <Link
+              className="hover-contact-icon"
+              href="https://www.instagram.com/rasmuseeliasson/"
+            >
+              <Image
+                src={"/icons/instagram.svg"}
+                alt="instagram"
+                width={50}
+                height={50}
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover-contact-icon"
+              href="https://www.linkedin.com/in/rasmus-eliasson-290789247/"
+            >
+              <Image
+                src={"/icons/linkedin.svg"}
+                alt="linkedIn"
+                width={50}
+                height={50}
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover-contact-icon"
+              href="https://github.com/Rasmus3liasson?tab=repositories"
+            >
+              <Image
+                src={"/icons/github.svg"}
+                alt="github"
+                width={50}
+                height={50}
+              />
+            </Link>
+          </li>
         </ul>
       </nav>
     </section>
