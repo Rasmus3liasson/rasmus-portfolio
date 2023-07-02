@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ThemeSwitch from "./ThemeSwitch";
 import NavMenu from "./NavMenu";
@@ -31,10 +30,13 @@ export default function Header() {
         !showHeader && "hidden"
       }`}
     >
-      <div className="h1-name ml-6 text-xl">
-        <Link href={"#header"}>
-          <h1>Rasmus Eliasson</h1>
-        </Link>
+      <div
+        onClick={(event) => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className="h1-name ml-6 text-xl"
+      >
+        <h1>Rasmus Eliasson</h1>
       </div>
 
       <nav className="flex p-4 items-center md:flex-row-reverse">

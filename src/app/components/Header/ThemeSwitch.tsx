@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import NavMenu from "./NavMenu";
 
 export default function ThemeSwitch() {
   const [theme, setTheme] = useState("light");
@@ -24,7 +23,7 @@ export default function ThemeSwitch() {
 
   return (
     <>
-      <div className="flex items-center space-x-2 border-2 border-r-colors-purlpe rounded-2xl p-1 shadow-md z-10">
+      <div className="flex items-center border-2 border-colors-darkPurple rounded-2xl p-1 shadow-md">
         <div
           className="flex"
           onClick={() => {
