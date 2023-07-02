@@ -12,9 +12,6 @@
   .container-scroll {
     @apply bg-colors-white rounded-t-xl rounded-b-xl shadow-container py-5 mb-11 text-center w-5/6 px-4;
   }
-  .coding-icon {
-    @apply text-5xl lg:text-7xl text-colors-purlpe space-x-5 lg:space-x-12 mt-4 flex justify-center items-center;
-  }
 
   .round-border {
     @apply border-2 border-solid border-colors-purlpe rounded-full p-2 bg-colors-white hover:-rotate-12 duration-300 hover:ease-in;

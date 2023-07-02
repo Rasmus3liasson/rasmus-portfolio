@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hobbies() {
   return (
-    <section id="hobbies" className="container">
+    <section className="container -mt-32">
       <h3 className="text-4xl text-center">Mina Intressen</h3>
 
       <div>

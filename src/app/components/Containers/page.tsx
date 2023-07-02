@@ -6,8 +6,6 @@ import Education from "./Education";
 export default function Containers() {
   return (
     <>
-      <Hobbies />
-
       <Knowledge />
       <Education />
     </>
