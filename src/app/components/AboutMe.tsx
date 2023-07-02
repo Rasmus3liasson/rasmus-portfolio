@@ -2,7 +2,10 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <article className="flex gap-20 my-9 bg-gradient-to-r from-colors-purlpe to-colors-darkPurple">
+    <article
+      id="aboutMe"
+      className="flex gap-20 my-9 bg-gradient-to-r from-colors-purlpe to-colors-darkPurple"
+    >
       <div className="text-colors-white p-9 text-center">
         <h3 className="text-3xl">Hejsan, mitt namn är Rasmus Eliasson</h3>
 

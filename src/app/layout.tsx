@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/Header/page";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} m-0 p-0 box-border bg-colors-white dark:bg-colors-purlpe`}
+        className={`${font.className} m-0 p-0 box-border bg-colors-white dark:bg-colors-purlpe scroll-smooth`}
       >
         <>
           <Header />

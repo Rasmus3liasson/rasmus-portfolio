@@ -25,16 +25,7 @@
   .hover-contact-icon {
     @apply hover:scale-110 hover:rotate-3 duration-150 ease-in;
   }
-  .close .line1 {
-    @apply translate-y-1 -rotate-45;
-  }
-  .close .line2 {
-    @apply opacity-0;
-  }
-  .close .line3 {
-    @apply -translate-y-1 rotate-45;
-  }
-  .hidden-menu {
-    @apply hidden;
+  .nav-links {
+    @apply active:scale-103 hover:opacity-90 hover:underline;
   }
 }
