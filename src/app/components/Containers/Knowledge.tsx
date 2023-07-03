@@ -28,6 +28,10 @@ export default function Knowledge() {
           )}
 
           {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
+          )}
+
+          {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
           )}
           {renderProgrammingIcons(

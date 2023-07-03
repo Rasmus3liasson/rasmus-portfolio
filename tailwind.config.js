@@ -21,11 +21,23 @@ module.exports = {
     extend: {
       animation: {
         headerAnimation: "slideDown 0.7s ease-in-out",
+        arrowDisapear: "disapear 1s ease-in forwards",
+        arrowAppear: "appear 2s ease-in-out",
       },
       keyframes: {
         slideDown: {
           "0%": { transform: "translateY(-100%)" },
           "100%": { transform: "translateY(0)" },
+        },
+
+        disapear: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
+        appear: {
+          "0%": { opacity: 0 },
+          "70%": { opacity: 1, transform: "translateY(-20%)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
         },
       },
       boxShadow: {

@@ -5,9 +5,11 @@ import React, { useEffect, useState } from "react";
 
 export default function Hero() {
   const [headingText, setHeadingText] = useState("");
+  const [scrollIndicator, setScrollIndicator] = useState(false);
+  const [arrowState, setArrowState] = useState(false);
 
   useEffect(() => {
-    const welcomeText = "  Hejsan! Mitt namn är Rasmus Eliasson";
+    const welcomeText = "Hejsan! Mitt namn är Rasmus Eliasson";
     let index = 0;
 
     const interval = setInterval(() => {
@@ -16,11 +18,21 @@ export default function Hero() {
 
       if (index === welcomeText.length - 1) {
         clearInterval(interval);
+        setScrollIndicator(true);
       }
     }, 100);
 
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setArrowState(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
       clearInterval(interval);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -30,8 +42,6 @@ export default function Hero() {
         <div className="w-96">
           <h2 className="text-xl text-center">Systemutvecklare</h2>
           <h3 className="text-2xl font-semibold text-center">{headingText}</h3>
-
-          <button></button>
         </div>
 
         <div>
@@ -44,6 +54,17 @@ export default function Hero() {
                bild på mig"
           />
         </div>
+        {scrollIndicator && (
+          <Image
+            className={`absolute bottom-0 animate-arrowAppear ${
+              arrowState && "animate-arrowDisapear"
+            }`}
+            src={"/icons/arrow.svg"}
+            alt={"arrow"}
+            width={30}
+            height={30}
+          />
+        )}
       </div>
     </section>
   );
