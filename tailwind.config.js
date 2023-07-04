@@ -9,13 +9,17 @@ module.exports = {
   theme: {
     colors: {
       colors: {
-        black: "#090909",
+        black: "#1B1D24",
         darker: "#52595D",
         white: "#FEFCFF",
         purlpe: "#976bed",
         darkPurple: "#730080",
         red: "#ed493d",
         greyLight: "#d7d7d7",
+        pink: "#9D0B51",
+        darkPink: "#5A0834",
+        lightPink: "#E44EC3",
+        inputField: "#f7f7f7",
       },
     },
     extend: {

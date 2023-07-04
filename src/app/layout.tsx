@@ -25,7 +25,7 @@ export default function RootLayout({
         ></link>
       </Head>
       <body
-        className={`${font.className} m-0 p-0 box-border bg-colors-white dark:bg-colors-purlpe scroll-smooth`}
+        className={`${font.className} m-0 p-0 box-border bg-colors-white dark:bg-colors-black text-colors-black dark:text-colors-white scroll-smooth`}
       >
         <>
           <Header />

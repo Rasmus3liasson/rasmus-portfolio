@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Wordle() {
   return (
-    <section className="container-scroll h-72">
+    <section className="container container-scroll h-72">
       <div className="content-scroll">
         <div className="flex justify-center items-center mb-5">
           <a href="#">

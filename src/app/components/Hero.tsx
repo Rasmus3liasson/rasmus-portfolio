@@ -9,7 +9,7 @@ export default function Hero() {
   const [arrowState, setArrowState] = useState(false);
 
   useEffect(() => {
-    const welcomeText = "Hejsan! Mitt namn är Rasmus Eliasson";
+    const welcomeText = "   Hejsan! Mitt namn är Rasmus Eliasson";
     let index = 0;
 
     const interval = setInterval(() => {
@@ -37,8 +37,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="bg-colors-darker h-screen w-full flex justify-center items-center">
-      <div className="flex flex-col items-center justify-center md:flex-row text-colors-darkPurple">
+    <section className="h-screen w-full flex justify-center items-center">
+      <div className="flex flex-col items-center justify-center md:flex-row">
         <div className="w-96">
           <h2 className="text-xl text-center">Systemutvecklare</h2>
           <h3 className="text-2xl font-semibold text-center">{headingText}</h3>
@@ -46,10 +46,10 @@ export default function Hero() {
 
         <div>
           <Image
-            className="rounded-full w-36 mt-16 shadow-3xl"
-            src={"/profile-picture.JPG"}
-            width={200}
-            height={200}
+            className="mt-16 shadow-3xl"
+            src={"/profile-picture.jpg"}
+            width={300}
+            height={300}
             alt="En
                bild på mig"
           />

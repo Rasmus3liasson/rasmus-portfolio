@@ -21,7 +21,7 @@ export default function NavMenu() {
         <ul
           className={`${
             showMenu && "hidden md:flex"
-          } bg-colors-darker md:bg-colors-white absolute md:relative right-0 top-0 rounded-l-xl px-12 h-2/4 md:h-auto flex flex-col md:flex-row md:gap-4 items-center justify-evenly text-2xl md:text-xl `}
+          } absolute md:relative right-0 top-0 rounded-l-xl px-12 h-2/4 md:h-auto flex flex-col md:flex-row md:gap-4 items-center justify-evenly text-2xl md:text-xl `}
         >
           <li className="nav-links">
             <Link

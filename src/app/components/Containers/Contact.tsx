@@ -84,7 +84,9 @@ export default function Contact() {
               onChange={(event) => {
                 setMessage(event.target.value);
               }}
-              className={`py-1 px-2 rounded-xl ${errorBorder(message)}`}
+              className={`py-1 px-2 rounded-xl text-colors-black bg-colors-inputField shadow-lg ${errorBorder(
+                message
+              )}`}
               cols={30}
               rows={8}
               placeholder="Ditt Meddelande:"
@@ -97,7 +99,7 @@ export default function Contact() {
             event.preventDefault();
             handleMailInput();
           }}
-          className="text-colors-white bg-gradient-to-r from-colors-purlpe to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 duration-200 ease-in hover:scale-103 md:w-52 md:text-lg"
+          className="text-colors-white bg-gradient-to-r from-colors-purlpe dark:from-colors-black to-colors-darkPurple dark:to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 duration-200 ease-in hover:scale-103 md:w-52 md:text-lg"
         >
           Skicka
         </button>

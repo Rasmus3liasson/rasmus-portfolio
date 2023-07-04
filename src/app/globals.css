@@ -7,7 +7,7 @@
     @apply w-12 h-auto fill-colors-purlpe;
   }
   .container {
-    @apply bg-colors-white rounded-t-xl rounded-b-xl shadow-container px-24 py-5 mb-28 text-center w-5/6;
+    @apply bg-colors-white dark:bg-colors-purlpe rounded-t-xl rounded-b-xl shadow-container px-24 py-5 mb-28 text-center w-5/6;
   }
   .container-scroll {
     @apply bg-colors-white rounded-t-xl rounded-b-xl shadow-container py-5 mb-11 text-center w-5/6 px-4;
@@ -27,6 +27,6 @@
   }
 
   .input {
-    @apply w-64 rounded-3xl px-3 py-0.5 shadow-lg lg:w-80 lg:h-9 italic focus:scale-105 duration-200 focus:outline-1;
+    @apply bg-colors-inputField text-colors-black w-64 rounded-3xl px-3 py-0.5 shadow-lg lg:w-80 lg:h-9 italic focus:scale-105 duration-200 focus:outline-1;
   }
 }
