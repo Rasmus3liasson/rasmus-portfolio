@@ -24,34 +24,40 @@ export default function NavMenu() {
           } absolute md:relative right-0 top-14 md:top-0 rounded-l-xl px-12 py-9 md:py-0 md:h-auto flex flex-col md:flex-row gap-16 md:gap-4 items-center justify-evenly text-2xl md:text-xl bg-colors-white dark:bg-colors-black`}
         >
           <li className="nav-links">
-            <Link
-              to="aboutMe"
-              smooth={true}
-              duration={900}
-              onClick={handleMenu}
-            >
-              Om mig
-            </Link>
+            <span className="underline-hover">
+              <Link
+                to="aboutMe"
+                smooth={true}
+                duration={900}
+                onClick={handleMenu}
+              >
+                Om Mig
+              </Link>
+            </span>
           </li>
           <li className="nav-links">
-            <Link
-              to="projects"
-              smooth={true}
-              duration={1100}
-              onClick={handleMenu}
-            >
-              Mina projekt
-            </Link>
+            <span className="underline-hover ">
+              <Link
+                to="projects"
+                smooth={true}
+                duration={1100}
+                onClick={handleMenu}
+              >
+                Mina projekt
+              </Link>
+            </span>
           </li>
           <li className="nav-links">
-            <Link
-              to="contact"
-              smooth={true}
-              duration={1300}
-              onClick={handleMenu}
-            >
-              Kontakta mig
-            </Link>
+            <span className="underline-hover ">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={1300}
+                onClick={handleMenu}
+              >
+                Kontakta mig
+              </Link>
+            </span>
           </li>
         </ul>
       </div>
