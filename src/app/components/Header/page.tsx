@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className={`flex justify-between items-center fixed w-full top-0 animate-headerAnimation bg-colors-white dark:bg-colors-black ${
+      className={`flex justify-between items-center fixed w-full top-0 animate-headerAnimation bg-colors-white dark:bg-colors-black dark:text-colors-white ${
         !showHeader && "hidden"
       }`}
     >
@@ -34,7 +34,7 @@ export default function Header() {
         onClick={(event) => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
-        className="h1-name ml-6 text-xl"
+        className="ml-6 text-xl"
       >
         <h1>Rasmus Eliasson</h1>
       </div>
