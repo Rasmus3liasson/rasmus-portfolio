@@ -51,21 +51,22 @@ export default function Hero() {
             src={"/profile-picture.jpg"}
             width={300}
             height={300}
-            alt="En
-               bild på mig"
+            alt="En bild på mig"
           />
         </div>
         {scrollIndicator && (
           <Link to="aboutMe" smooth={true} duration={1100}>
-            <Image
-              className={`absolute bottom-0 animate-arrowAppear cursor-pointer ${
-                arrowState && "animate-arrowDisapear"
-              }`}
-              src={"/icons/arrow.svg"}
-              alt={"arrow"}
-              width={30}
-              height={30}
-            />
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+              <Image
+                className={`animate-arrowAppear cursor-pointer ${
+                  arrowState && "animate-arrowDisapear"
+                }`}
+                src={"/icons/arrow.svg"}
+                alt={"arrow"}
+                width={30}
+                height={30}
+              />
+            </div>
           </Link>
         )}
       </div>
