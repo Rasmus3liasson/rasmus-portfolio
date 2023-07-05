@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Link } from "react-scroll";
 import React, { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -55,15 +56,17 @@ export default function Hero() {
           />
         </div>
         {scrollIndicator && (
-          <Image
-            className={`absolute bottom-0 animate-arrowAppear ${
-              arrowState && "animate-arrowDisapear"
-            }`}
-            src={"/icons/arrow.svg"}
-            alt={"arrow"}
-            width={30}
-            height={30}
-          />
+          <Link to="aboutMe" smooth={true} duration={1100}>
+            <Image
+              className={`absolute bottom-0 animate-arrowAppear cursor-pointer ${
+                arrowState && "animate-arrowDisapear"
+              }`}
+              src={"/icons/arrow.svg"}
+              alt={"arrow"}
+              width={30}
+              height={30}
+            />
+          </Link>
         )}
       </div>
     </section>
