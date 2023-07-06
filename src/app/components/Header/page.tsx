@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className={`flex justify-between items-center fixed w-full top-0 animate-headerAnimation bg-colors-white dark:bg-colors-black dark:text-colors-white ${
+      className={`flex justify-between items-center fixed w-full top-0 animate-headerAnimation bg-colors-white dark:bg-colors-black dark:text-colors-white z-10 ${
         !showHeader && "hidden"
       }`}
     >
