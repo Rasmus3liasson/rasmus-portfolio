@@ -6,6 +6,16 @@ export default function ThemeSwitch() {
   const [themeIcon, setThemeIcon] = useState(false);
 
   useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setTheme("dark");
+      setThemeIcon(true);
+    }
+  }, []);
+
+  useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {

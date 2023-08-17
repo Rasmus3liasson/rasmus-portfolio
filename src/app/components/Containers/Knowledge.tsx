@@ -10,7 +10,7 @@ export default function Knowledge() {
 
   return (
     <section className="container -mt-24">
-      <div className="my-9">
+      <div className="my-3 w-full">
         <h3 className="text-4xl text-center">Kunskaper</h3>
         <div className="mt-8 flex flex-wrap justify-center gap-9 md:gap-20">
           {renderProgrammingIcons(
