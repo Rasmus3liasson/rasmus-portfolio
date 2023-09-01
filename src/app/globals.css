@@ -46,4 +46,10 @@
   .input {
     @apply bg-colors-inputField text-colors-black w-64 rounded-3xl px-3 py-0.5 shadow-lg lg:w-80 lg:h-9 italic focus:scale-105 duration-200 focus:outline-1;
   }
+  .animate-start {
+    @apply opacity-0 transform translate-y-5 transition-opacity duration-700 ease-in-out;
+  }
+  .show-project {
+    @apply translate-y-0 opacity-100;
+  }
 }
