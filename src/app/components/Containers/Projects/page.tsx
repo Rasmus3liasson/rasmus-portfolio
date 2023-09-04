@@ -3,6 +3,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Wordle from "./Wordle";
 import Cinema from "./Cinema";
+import WebShop from "./WebShop";
 
 function useIntersectionObserver(ref: React.RefObject<Element>) {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,14 +39,22 @@ function useIntersectionObserver(ref: React.RefObject<Element>) {
 export default function Projects() {
   const wordleRef = useRef(null);
   const cinemaRef = useRef(null);
+  const webShopRef = useRef(null);
 
   const isWordleVisible = useIntersectionObserver(wordleRef);
   const isCinemaVisible = useIntersectionObserver(cinemaRef);
+  const isWebShopVisible = useIntersectionObserver(webShopRef);
 
   return (
     <div id="projects" className="flex items-center justify-center bg-red">
       <div className="container flex flex-col items-center justify-center gap-9">
         <h3 className="text-4xl">Mina Projekt</h3>
+        <div
+          className={`animate-start ${isWebShopVisible && "show-project"}`}
+          ref={webShopRef}
+        >
+          <WebShop />
+        </div>
         <div
           className={`animate-start ${isWordleVisible && "show-project"}`}
           ref={wordleRef}

@@ -64,6 +64,9 @@ export default function Knowledge() {
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
           )}
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+          )}
         </div>
       </div>
     </section>

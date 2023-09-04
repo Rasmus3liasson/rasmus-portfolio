@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <>
       <div id="aboutMe"></div>
-      <article className="flex gap-20 my-9 bg-gradient-to-r from-colors-purlpe to-colors-darkPurple curved-background">
+      <article className="flex justify-center gap-20 my-9 bg-gradient-to-r from-colors-purlpe to-colors-darkPurple curved-background w-full">
         <div className="text-colors-white p-9 text-center">
           <h3 className="text-3xl">Hejsan, mitt namn är Rasmus Eliasson</h3>
           <div>
