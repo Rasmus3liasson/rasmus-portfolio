@@ -132,7 +132,7 @@ export default function Contact() {
             </Link>
           </li>
           <li>
-            <Link href="https://github.com/Rasmus3liasson?tab=repositories">
+            <Link href="https://github.com/Rasmus3liasson">
               <Image
                 className="hover-contact-icon"
                 src={"/icons/github.svg"}
