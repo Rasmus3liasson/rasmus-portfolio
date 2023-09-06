@@ -99,7 +99,7 @@ export default function Contact() {
             event.preventDefault();
             handleMailInput();
           }}
-          className="text-colors-white bg-gradient-to-r from-colors-purlpe dark:from-colors-black to-colors-darkPurple dark:to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 duration-200 ease-in hover:scale-103 md:w-52 md:text-lg"
+          className="text-colors-white bg-gradient-to-r from-colors-purlpe dark:from-colors-black to-colors-darkPurple dark:to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all ease-in-out duration-200 hover:scale-103 md:w-52 md:text-lg"
         >
           Skicka
         </button>
@@ -110,11 +110,9 @@ export default function Contact() {
 
         <ul className="flex justify-center scale-105 gap-5">
           <li>
-            <Link
-              className="hover-contact-icon"
-              href="https://www.instagram.com/rasmuseeliasson/"
-            >
+            <Link href="https://www.instagram.com/rasmuseeliasson/">
               <Image
+                className="hover-contact-icon"
                 src={"/icons/instagram.svg"}
                 alt="instagram"
                 width={50}
@@ -123,11 +121,9 @@ export default function Contact() {
             </Link>
           </li>
           <li>
-            <Link
-              className="hover-contact-icon"
-              href="https://www.linkedin.com/in/rasmus-eliasson-290789247/"
-            >
+            <Link href="https://www.linkedin.com/in/rasmus-eliasson-290789247/">
               <Image
+                className="hover-contact-icon"
                 src={"/icons/linkedin.svg"}
                 alt="linkedIn"
                 width={50}
@@ -136,11 +132,9 @@ export default function Contact() {
             </Link>
           </li>
           <li>
-            <Link
-              className="hover-contact-icon"
-              href="https://github.com/Rasmus3liasson?tab=repositories"
-            >
+            <Link href="https://github.com/Rasmus3liasson?tab=repositories">
               <Image
+                className="hover-contact-icon"
                 src={"/icons/github.svg"}
                 alt="github"
                 width={50}

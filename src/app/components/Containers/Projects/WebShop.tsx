@@ -9,7 +9,7 @@ export default function WebShop() {
         <p className="text-3xl mb-6">Web Shop</p>
         <div>
           <Image
-            src={"/cinema-image.png"}
+            src={"/web-shop-image.png"}
             alt="project of a cinema booking site"
             width={700}
             height={700}
