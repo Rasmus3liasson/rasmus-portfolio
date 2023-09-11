@@ -47,7 +47,7 @@ export default function Hero() {
 
         <div>
           <Image
-            className="mt-16 shadow-3xl"
+            className="mt-16 shadow-3xl hej"
             src={"/profile-picture.jpg"}
             width={300}
             height={300}

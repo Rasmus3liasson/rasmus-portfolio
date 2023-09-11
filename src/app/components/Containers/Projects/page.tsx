@@ -47,7 +47,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="flex items-center justify-center bg-red">
-      <div className="container flex flex-col items-center justify-center gap-9">
+      <div className="container flex flex-col items-center justify-center gap-9 px-6">
         <h3 className="text-4xl">Mina Projekt</h3>
         <div
           className={`animate-start ${isWebShopVisible && "show-project"}`}

@@ -12,7 +12,7 @@ export default function Knowledge() {
     <section className="container -mt-24">
       <div className="my-3 w-full">
         <h3 className="text-4xl text-center">Kunskaper</h3>
-        <div className="mt-8 flex flex-wrap justify-center gap-9 md:gap-20">
+        <div className="mt-8 flex flex-wrap justify-center gap-6 sm:gap-9 md:gap-20">
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
           )}
@@ -47,7 +47,7 @@ export default function Knowledge() {
 
         <h3 className="text-4xl mt-12">Extras</h3>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-9 md:gap-20">
+        <div className="mt-8 flex flex-wrap justify-center gap-6 sm:gap-9 md:gap-20">
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
           )}

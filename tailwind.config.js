@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     colors: {
       colors: {
-        black: "#1B1D24",
+        black: "#070708",
         darker: "#52595D",
         white: "#FEFCFF",
         purlpe: "#976bed",
@@ -27,8 +27,13 @@ module.exports = {
         headerAnimation: "slideDown 0.7s ease-in-out",
         arrowDisapear: "disapear 1s ease-in forwards",
         arrowAppear: "appear 2s ease-in-out",
+        navMenu: "slideIn 0.3s ease-in forwards",
       },
       keyframes: {
+        slideIn: {
+          "0%": { transform: "translateX(10%)" },
+          "100%": { transform: "translateX(1%)" },
+        },
         slideDown: {
           "0%": { transform: "translateY(-100%)" },
           "100%": { transform: "translateY(0)" },
