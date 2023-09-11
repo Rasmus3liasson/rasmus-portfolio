@@ -106,7 +106,7 @@ export default function Contact() {
       </form>
 
       <nav>
-        <p className="mb-2 text-lg">Andra kontaktvägar</p>
+        <p className="mb-4 text-sm md:text-lg">Andra kontaktvägar</p>
 
         <ul className="flex justify-center scale-105 gap-5">
           <li>

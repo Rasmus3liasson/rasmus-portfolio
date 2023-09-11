@@ -24,7 +24,7 @@
     @apply w-12 h-auto fill-colors-purlpe;
   }
   .container {
-    @apply bg-colors-white dark:bg-colors-black rounded-t-xl rounded-b-xl shadow-container px-24 py-5 mb-28 text-center w-5/6 dark:text-colors-white;
+    @apply bg-colors-white dark:bg-colors-black rounded-t-xl rounded-b-xl shadow-container dark:shadow-darkContainer px-24 py-5 mb-28 text-center w-5/6 dark:text-colors-white;
   }
   .container-scroll {
     @apply bg-colors-white rounded-t-xl rounded-b-xl shadow-container py-5 mb-11 text-center w-5/6 px-4;

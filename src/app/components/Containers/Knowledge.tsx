@@ -2,9 +2,21 @@ import Image from "next/image";
 import React from "react";
 
 export default function Knowledge() {
-  const renderProgrammingIcons = (srcOfImage: string) => {
+  const renderProgrammingIcons = (
+    srcOfImage: string,
+    applyWhiteColor: boolean
+  ) => {
+    const style = applyWhiteColor
+      ? "dark:filter dark:brightness-0 dark:invert"
+      : "";
     return (
-      <Image src={srcOfImage} alt={"proggraming icon"} width={60} height={60} />
+      <Image
+        src={srcOfImage}
+        alt={"proggraming icon"}
+        width={60}
+        height={60}
+        className={style}
+      />
     );
   };
 
@@ -14,34 +26,43 @@ export default function Knowledge() {
         <h3 className="text-4xl text-center">Kunskaper</h3>
         <div className="mt-8 flex flex-wrap justify-center gap-6 sm:gap-9 md:gap-20">
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+            false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+            false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-          )}
-
-          {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-          )}
-
-          {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            false
           )}
 
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            false
+          )}
+
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+            true
+          )}
+
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+            false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            true
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+            false
           )}
         </div>
 
@@ -49,23 +70,30 @@ export default function Knowledge() {
 
         <div className="mt-8 flex flex-wrap justify-center gap-6 sm:gap-9 md:gap-20">
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+            false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+            false
           )}
-          {renderProgrammingIcons("/icons/ejs.svg")}
+          {renderProgrammingIcons("/icons/ejs.svg", false)}
+
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-          )}
-          {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-          )}
-          {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+            false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            true
+          )}
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+            false
+          )}
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+            false
           )}
         </div>
       </div>

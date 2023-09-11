@@ -38,16 +38,16 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="h-screen w-full flex justify-center items-center">
-      <div className="flex flex-col items-center justify-center md:flex-row">
+    <section className="h-screen w-full flex justify-center items-center dark:bg-colors-black ">
+      <div className="flex flex-col items-center justify-center md:flex-row dark:bg-colors-black">
         <div className="w-96">
           <h2 className="text-xl text-center">Systemutvecklare</h2>
           <h3 className="text-2xl font-semibold text-center">{headingText}</h3>
         </div>
 
-        <div>
+        <div className="scale-75 md:scale-100">
           <Image
-            className="mt-16 shadow-3xl hej"
+            className="mt-16 shadow-3xl rounded-xl"
             src={"/profile-picture.jpg"}
             width={300}
             height={300}

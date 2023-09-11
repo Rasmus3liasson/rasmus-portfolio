@@ -17,11 +17,11 @@ export default function NavMenu() {
           onClick={handleMenu}
         ></div>
       )}
-      <div>
+      <div className="md:mr-1">
         <ul
           className={`${
             showMenu && "hidden md:flex"
-          } absolute md:relative right-0 top-0 rounded-l-xl px-12 py-9 md:py-0 md:h-auto flex flex-col md:flex-row gap-16 md:gap-4 items-center justify-evenly text-2xl md:text-xl bg-colors-white dark:bg-colors-black animate-navMenu`}
+          } absolute md:relative right-0 top-0 rounded-l-xl px-12 py-9 md:py-0 md:pr-3 md:h-auto flex flex-col md:flex-row gap-16 md:gap-4 items-center justify-evenly text-2xl md:text-xl bg-colors-white dark:bg-colors-black animate-navMenu`}
         >
           <li className="nav-links">
             <span className="underline-hover">

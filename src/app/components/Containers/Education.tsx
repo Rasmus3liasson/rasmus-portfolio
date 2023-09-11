@@ -7,7 +7,7 @@ export default function Education() {
         <h3 className="text-4xl">Utbilding</h3>
         <p className="mt-5 text-xl">
           Systemutvecklare i Java och JavaScript <br />
-          Höst 2020 - Vår 2024
+          Höst 2022 - Vår 2024
         </p>
       </div>
     </section>
