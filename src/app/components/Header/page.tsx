@@ -36,7 +36,7 @@ export default function Header() {
         }}
         className="ml-6 text-xl"
       >
-        <h1>Rasmus Eliasson</h1>
+        <h1 className="cursor-pointer">Rasmus Eliasson</h1>
       </div>
 
       <nav className="flex p-4 items-center md:flex-row-reverse">

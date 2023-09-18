@@ -33,7 +33,7 @@ export default function ThemeSwitch() {
 
   return (
     <>
-      <div className="flex items-center border-2 border-colors-darkPurple rounded-2xl p-1 shadow-md">
+      <div className="flex items-center border-2 border-colors-darkPurple rounded-2xl p-1 shadow-md cursor-pointer">
         <div
           className="flex"
           onClick={() => {

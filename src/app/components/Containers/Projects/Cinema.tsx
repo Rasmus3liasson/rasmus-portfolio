@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Cinema() {
   return (
-    <section className="container container-scroll h-auto flex items-center justify-center w-full ">
+    <section className="container container-scroll h-auto flex items-center justify-center w-full -mt-10 lg:mt-0">
       <div className="w-full flex items-center flex-col justify-center relative group py-6">
         <p className="text-3xl mb-6">Biograf</p>
         <div>

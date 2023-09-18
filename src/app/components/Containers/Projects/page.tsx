@@ -46,26 +46,28 @@ export default function Projects() {
   const isWebShopVisible = useIntersectionObserver(webShopRef);
 
   return (
-    <div id="projects" className="flex items-center justify-center bg-red">
+    <div id="projects" className="flex items-center justify-center">
       <div className="container flex flex-col items-center justify-center gap-9 px-6">
         <h3 className="text-4xl">Mina Projekt</h3>
-        <div
-          className={`animate-start ${isWebShopVisible && "show-project"}`}
-          ref={webShopRef}
-        >
-          <WebShop />
-        </div>
-        <div
-          className={`animate-start ${isWordleVisible && "show-project"}`}
-          ref={wordleRef}
-        >
-          <Wordle />
-        </div>
-        <div
-          className={`animate-start ${isCinemaVisible && "show-project"}`}
-          ref={cinemaRef}
-        >
-          <Cinema />
+        <div className="flex flex-col lg:flex-row justify-between gap-10 px-3">
+          <div
+            className={`animate-start ${isWebShopVisible && "show-project"}`}
+            ref={webShopRef}
+          >
+            <WebShop />
+          </div>
+          <div
+            className={`animate-start ${isWordleVisible && "show-project"}`}
+            ref={wordleRef}
+          >
+            <Wordle />
+          </div>
+          <div
+            className={`animate-start ${isCinemaVisible && "show-project"}`}
+            ref={cinemaRef}
+          >
+            <Cinema />
+          </div>
         </div>
       </div>
     </div>
