@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Wordle() {
   return (
-    <section className="container container-scroll h-auto flex items-center justify-center w-full">
+    <section className="container container-scroll h-auto flex items-center justify-center w-full py-6">
       <div className="w-full flex items-center flex-col justify-center relative group">
         <p className="text-3xl mb-6">Worlde</p>
         <div>
