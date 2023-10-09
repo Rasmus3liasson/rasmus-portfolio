@@ -38,8 +38,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="h-screen w-full flex justify-center items-center dark:bg-colors-black ">
-      <div className="flex flex-col items-center justify-center md:flex-row dark:bg-colors-black">
+    <section className="mt-[1px] h-screen w-full flex justify-center items-center bg-colors-black">
+      <div className="flex flex-col items-center justify-center md:flex-row">
         <div className="w-96">
           <h2 className="text-xl text-center">Systemutvecklare</h2>
           <h3 className="text-2xl font-semibold text-center">{headingText}</h3>
