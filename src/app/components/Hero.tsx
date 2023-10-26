@@ -38,7 +38,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="mt-[1px] h-screen w-full flex justify-center items-center bg-colors-black">
+    <section className="mt-[1px] h-screen w-full flex justify-center items-center bg-colors-white dark:bg-colors-black">
       <div className="flex flex-col items-center justify-center md:flex-row">
         <div className="w-96">
           <h2 className="text-xl text-center">Systemutvecklare</h2>
