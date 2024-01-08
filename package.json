@@ -24,6 +24,6 @@
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-scroll": "^1.8.7",
-    "typescript": "^5.2.2"
+    "typescript": "5.3.3"
   }
 }

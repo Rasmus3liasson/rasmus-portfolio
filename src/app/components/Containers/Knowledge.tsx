@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 export default function Knowledge() {
   const renderProgrammingIcons = (
@@ -26,10 +25,6 @@ export default function Knowledge() {
         <h3 className="text-4xl">Kunskaper</h3>
         <div className="mt-8 flex flex-wrap justify-center items-center gap-6 sm:gap-9 md:gap-20">
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-            false
-          )}
-          {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
             false
           )}
@@ -38,6 +33,10 @@ export default function Knowledge() {
             false
           )}
 
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+            false
+          )}
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
             false
@@ -49,16 +48,20 @@ export default function Knowledge() {
           )}
 
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
             false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
             false
           )}
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
             true
+          )}
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+            false
           )}
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
@@ -77,7 +80,6 @@ export default function Knowledge() {
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
             false
           )}
-          {renderProgrammingIcons("/icons/ejs.svg", false)}
 
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
@@ -87,10 +89,7 @@ export default function Knowledge() {
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
             true
           )}
-          {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-            false
-          )}
+
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
             false
