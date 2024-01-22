@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default function WebShop() {
   return (
@@ -16,7 +15,7 @@ export default function WebShop() {
             className="hover:opacity-75"
           />
 
-          <Link href="https://webshopclothes.netlify.app">
+          <Link href="https://github.com/Rasmus3liasson/webshop">
             <div className="absolute content-scroll inset-0 opacity-0 bg-colors-inputField group-hover:opacity-90 duration-200 flex flex-col py-2 text-colors-black rounded-lg">
               <div className="mx-6">
                 <div>
