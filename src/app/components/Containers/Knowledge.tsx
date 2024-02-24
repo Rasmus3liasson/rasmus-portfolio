@@ -50,11 +50,11 @@ export default function Knowledge() {
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
             false
-            )}
-            {renderProgrammingIcons(
-              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
-              false
-            )}
+          )}
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+            false
+          )}
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
             false
@@ -92,6 +92,10 @@ export default function Knowledge() {
 
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+            false
+          )}
+          {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
             false
           )}
         </div>
