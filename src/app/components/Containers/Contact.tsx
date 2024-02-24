@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -84,7 +84,7 @@ export default function Contact() {
               onChange={(event) => {
                 setMessage(event.target.value);
               }}
-              className={`py-1 px-2 rounded-xl text-colors-black bg-colors-inputField shadow-lg ${errorBorder(
+              className={`p-3 rounded-xl text-colors-black bg-colors-inputField shadow-lg lg:scale-105 ${errorBorder(
                 message
               )}`}
               cols={30}
@@ -99,7 +99,7 @@ export default function Contact() {
             event.preventDefault();
             handleMailInput();
           }}
-          className="text-colors-white bg-gradient-to-r from-colors-purlpe dark:from-colors-black to-colors-darkPurple dark:to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all ease-in-out duration-200 hover:scale-103 md:w-52 md:text-lg"
+          className="text-colors-white bg-gradient-to-r from-colors-purlpe dark:from-colors- to-colors-darkPurple dark:to-colors-darkPurple hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple dark:focus:ring-purple shadow-lg shadow-purple/50 dark:shadow-lg dark:shadow-purple/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 transition-all ease-in-out duration-200 hover:scale-103 md:w-52 md:text-lg"
         >
           Skicka
         </button>

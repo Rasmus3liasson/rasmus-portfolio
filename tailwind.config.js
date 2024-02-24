@@ -53,6 +53,7 @@ module.exports = {
         container: "0 10px 15px rgba(0, 0, 0, 0.3)",
         img: "2px 10px 14px 0px rgba(38,37,37,0.75)",
         darkContainer: "0 2px 10px rgba(54, 54, 54)",
+        purpleContainer: "0 2px 10px rgba(115,0,128,1);",
       },
       scale: {
         40: "0.4",

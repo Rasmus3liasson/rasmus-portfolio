@@ -26,6 +26,9 @@
   .container {
     @apply bg-colors-white dark:bg-colors-black rounded-t-xl rounded-b-xl shadow-container dark:shadow-darkContainer px-24 py-5 mb-28 text-center w-5/6 dark:text-colors-white;
   }
+  .container-purple {
+    @apply bg-colors-white dark:bg-colors-black rounded-t-xl rounded-b-xl shadow-purpleContainer dark:shadow-purpleContainer px-24 py-5 mb-28 text-center w-5/6 dark:text-colors-white;
+  }
   .container-scroll {
     @apply bg-colors-white rounded-t-xl rounded-b-xl shadow-container py-5 mb-11 text-center w-5/6 px-4;
   }
@@ -44,7 +47,7 @@
   }
 
   .input {
-    @apply bg-colors-inputField text-colors-black w-64 rounded-3xl px-3 py-0.5 shadow-lg lg:w-80 lg:h-9 italic focus:scale-105 duration-200 focus:outline-1;
+    @apply bg-colors-inputField text-colors-black w-64 rounded-3xl px-3 py-0.5 shadow-lg lg:w-80 lg:h-9 italic focus:scale-103 duration-200 focus:outline-none;
   }
   .animate-start {
     @apply opacity-0 transform translate-y-5 transition-opacity duration-700 ease-in-out;
