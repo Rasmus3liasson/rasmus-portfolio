@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
-import Wordle from "./Wordle";
-import Cinema from "./Cinema";
+import React, { useEffect, useRef, useState } from "react";
+
 import WebShop from "./WebShop";
 
 function useIntersectionObserver(ref: React.RefObject<Element>) {
@@ -37,12 +36,8 @@ function useIntersectionObserver(ref: React.RefObject<Element>) {
 }
 
 export default function Projects() {
-  const wordleRef = useRef(null);
-  const cinemaRef = useRef(null);
   const webShopRef = useRef(null);
 
-  const isWordleVisible = useIntersectionObserver(wordleRef);
-  const isCinemaVisible = useIntersectionObserver(cinemaRef);
   const isWebShopVisible = useIntersectionObserver(webShopRef);
 
   return (
@@ -55,18 +50,6 @@ export default function Projects() {
             ref={webShopRef}
           >
             <WebShop />
-          </div>
-          <div
-            className={`animate-start ${isWordleVisible && "show-project"}`}
-            ref={wordleRef}
-          >
-            <Wordle />
-          </div>
-          <div
-            className={`animate-start ${isCinemaVisible && "show-project"}`}
-            ref={cinemaRef}
-          >
-            <Cinema />
           </div>
         </div>
       </div>
