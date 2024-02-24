@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ThemeSwitch() {
   const [theme, setTheme] = useState("light");
@@ -49,7 +49,7 @@ export default function ThemeSwitch() {
           />
 
           <span
-            className={`w-5 h-5 rounded-full bg-colors-darker relative duration-200 ${
+            className={`w-5 h-5 rounded-full bg-colors-darkPurple relative duration-200 ${
               !themeIcon ? "-right-5" : "right-5"
             }`}
           ></span>
