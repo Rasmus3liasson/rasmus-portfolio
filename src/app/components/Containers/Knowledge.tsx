@@ -50,7 +50,11 @@ export default function Knowledge() {
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
             false
-          )}
+            )}
+            {renderProgrammingIcons(
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+              false
+            )}
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
             false
@@ -63,10 +67,6 @@ export default function Knowledge() {
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
             false
           )}
-          {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-            false
-          )}
         </div>
 
         <h3 className="text-4xl mt-12">Extras</h3>
@@ -77,7 +77,7 @@ export default function Knowledge() {
             false
           )}
           {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
             false
           )}
 
