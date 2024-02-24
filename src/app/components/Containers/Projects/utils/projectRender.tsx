@@ -19,10 +19,10 @@ export default function projectRender({
 }: Project) {
   return (
     <section className="container-purple container-scroll h-auto flex flex-col items-center justify-center w-full m-0 p-7 ">
-      <p className="text-3xl mb-6">{title}</p>
+      <p className="text-3xl">{title}</p>
       <div>
         <div className="w-full flex items-center flex-col justify-center relative group py-6">
-          <div className="font-semibold content-scroll lg:h-60">
+          <div className="font-semibold content-scroll lg:h-80 text-sm md:text-xs lg:text-sm">
             <article>{description}</article>
           </div>
           <div className="absolute content-scroll inset-0 opacity-0 bg-colors-black text-colors-white group-hover:opacity-90 duration-200 flex flex-col py-2 rounded-lg">

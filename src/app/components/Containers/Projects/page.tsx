@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import AlcoholCheck from "./AlcoholCheck";
+import SpringBoot from "./SpringBoot";
 import WebShop from "./WebShop";
 
 function useIntersectionObserver(ref: React.RefObject<Element>) {
@@ -39,15 +40,17 @@ function useIntersectionObserver(ref: React.RefObject<Element>) {
 export default function Projects() {
   const webShopRef = useRef(null);
   const alcoholRef = useRef(null);
+  const springBootRef = useRef(null);
 
   const isWebShopVisible = useIntersectionObserver(webShopRef);
   const isAlcoholVisible = useIntersectionObserver(alcoholRef);
+  const isSpringBootVisible = useIntersectionObserver(springBootRef);
 
   return (
     <div id="projects" className="flex items-center justify-center">
       <div className="container flex flex-col items-center justify-center gap-9 px-6">
         <h3 className="text-4xl">Mina Projekt</h3>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 justify-between gap-10 px-3">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 justify-between gap-10 px-3">
           <div
             className={`animate-start ${isWebShopVisible && "show-project"}`}
             ref={webShopRef}
@@ -59,6 +62,12 @@ export default function Projects() {
             ref={alcoholRef}
           >
             <AlcoholCheck />
+          </div>
+          <div
+            className={`animate-start ${isSpringBootVisible && "show-project"}`}
+            ref={springBootRef}
+          >
+            <SpringBoot />
           </div>
         </div>
       </div>
