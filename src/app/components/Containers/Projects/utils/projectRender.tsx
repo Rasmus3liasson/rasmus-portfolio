@@ -25,7 +25,7 @@ export default function projectRender({
           <div className="font-semibold content-scroll lg:h-80 text-sm md:text-xs lg:text-sm">
             <article>{description}</article>
           </div>
-          <div className="absolute content-scroll inset-0 opacity-0 bg-colors-black text-colors-white group-hover:opacity-90 duration-200 flex flex-col py-2 rounded-lg">
+          <div className="absolute content-scroll inset-0 opacity-0 bg-colors-white dark:bg-colors-black text-colors-black dark:text-colors-white group-hover:opacity-90 duration-200 flex flex-col py-2 rounded-lg">
             <div className="mx-6">
               <div></div>
               <div className="flex-flex-col items-start mt-5">
