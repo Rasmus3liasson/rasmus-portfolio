@@ -10,7 +10,7 @@ export default function Hero() {
   const [arrowState, setArrowState] = useState(false);
 
   useEffect(() => {
-    const welcomeText = "   Hejsan! Mitt namn är Rasmus Eliasson";
+    const welcomeText = "   Rasmus Eliasson";
     let index = 0;
 
     const interval = setInterval(() => {
@@ -45,15 +45,6 @@ export default function Hero() {
           <h3 className="text-2xl font-semibold text-center">{headingText}</h3>
         </div>
 
-     {/*    <div className="scale-75 md:scale-100">
-          <Image
-            className="mt-16 shadow-3xl rounded-xl"
-            src={"/profile-picture.jpg"}
-            width={300}
-            height={300}
-            alt="En bild på mig"
-          />
-        </div> */}
         {scrollIndicator && (
           <Link to="aboutMe" smooth={true} duration={1100}>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
