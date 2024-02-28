@@ -32,7 +32,10 @@ export default function projectRender({
                 <p className="overflow-hidden font-semibold">Tekniker:</p>
                 <ul className="flex flex-col items-start justify-start mt-1">
                   {techniques.map((technique, index) => (
-                    <li key={index}> ● {technique}</li>
+                    <li className="whitespace-nowrap" key={index}>
+                      {" "}
+                      ● {technique}
+                    </li>
                   ))}
                 </ul>
               </div>
