@@ -30,7 +30,7 @@ export default function Education() {
 
       {/* pdf modal */}
       {showPdf && (
-        <div className="fixed top-0 left-0 w-full h-full bg-colors-black bg-opacity-50 flex justify-center items-center z-10">
+        <div className="fixed top-0 left-0 w-full h-full bg-colors-black bg-opacity-50 flex justify-center items-center z-10 animate-pdfAppear">
           <div className="shadow-lg flex justify-center items-center relative px-2">
             <Image
               className="rounded-lg"

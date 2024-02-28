@@ -28,6 +28,7 @@ module.exports = {
         arrowDisapear: "disapear 1s ease-in forwards",
         arrowAppear: "appear 2s ease-in-out",
         navMenu: "slideIn 0.3s ease-in forwards",
+        pdfAppear: "appearPDF 0.5s ease-in-out",
       },
       keyframes: {
         slideIn: {
@@ -47,6 +48,10 @@ module.exports = {
           "0%": { opacity: 0 },
           "70%": { opacity: 1, transform: "translateY(-20%)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        appearPDF: {
+          "0%": { opacity: 0, scale: "0.8" },
+          "100%": { opacity: 1, scale: "1" },
         },
       },
       boxShadow: {
