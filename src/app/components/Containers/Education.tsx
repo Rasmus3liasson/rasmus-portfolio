@@ -34,10 +34,10 @@ export default function Education() {
           <div className="shadow-lg flex justify-center items-center relative px-2">
             <Image
               className="rounded-lg"
-              src={"/education-certificate.jpg"}
+              src={"/education.png"}
               alt="pdf"
-              width={500}
-              height={500}
+              width={700}
+              height={700}
             />
 
             <Image
