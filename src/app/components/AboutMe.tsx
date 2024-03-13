@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function AboutMe() {
   return (
@@ -11,9 +10,9 @@ export default function AboutMe() {
             <p className="mt-6 leading-7 mb-20 lg:text-xl max-w-3xl">
               Har under det senaste året viljat ta en vändnig i min yrkesbana
               till att jobba inom IT. <br />
-              Jag har sedan studenten jobbat på postkontoret här i staden med
-              paket och brev. Efter dessa fem åren så känner jag en strävan
-              efter att byta branch för min yrkeskarriär. <br />
+              Jag har sedan studenten jobbat på postkontoret i min hemstad med
+              paket och brev. Men efter dessa fem åren så känner jag en strävan
+              efter att byta branch i min yrkeskarriär. <br />
               Jag läser i dagsläget en 2 årig utbildning på yrkeshögskola som
               bedrivs på distans av Lernia. <br />
               Fokus i utbildnignen ligger i Javascript samt Java.

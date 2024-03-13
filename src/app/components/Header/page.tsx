@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import ThemeSwitch from "./ThemeSwitch";
+import { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
+import ThemeSwitch from "./ThemeSwitch";
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(false);

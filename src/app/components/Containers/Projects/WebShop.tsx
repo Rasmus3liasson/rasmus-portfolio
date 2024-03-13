@@ -8,6 +8,7 @@ export default function WebShop() {
   const techniques = [
     "Next.js (app router)",
     "Firebase (auth)",
+    "MySQL",
     "Tailwind",
     "TypeScript",
     "Stripe",
