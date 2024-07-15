@@ -70,7 +70,7 @@ export default function Education() {
             onClick={() => setToggleSlider(false)}
             className="fixed top-0 right-0 left-0 w-full h-full flex justify-center items-center z-10"
           >
-            <div className="shadow-lg flex justify-center items-center relative rounded-lg mx-4">
+            <div className="shadow-lg flex justify-center items-center relative rounded-lg mx-4 lg:scale-100 md:scale-75 scale-50">
               <Image
                 className="rounded-lg max-w-lg"
                 src={selectedImageIndex === 0 ? images[0] : images[1]}
