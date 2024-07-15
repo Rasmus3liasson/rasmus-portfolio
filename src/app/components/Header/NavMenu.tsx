@@ -1,5 +1,5 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
-import React, { useState } from "react";
 
 export default function NavMenu() {
   const [showMenu, setShowMenu] = useState(true);
@@ -7,6 +7,8 @@ export default function NavMenu() {
   const handleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const linkStyle = "w-9 h-1 rounded-lg mx-2 duration-300 bg-colors-purlpe";
 
   return (
     <>
@@ -63,19 +65,11 @@ export default function NavMenu() {
       </div>
       <div onClick={handleMenu} className="md:hidden flex flex-col gap-2 z-10">
         <div
-          className={`w-9 h-1 rounded-lg bg-colors-darkPurple mx-2 duration-300 ${
-            !showMenu && "rotate-45 translate-y-1"
-          }`}
+          className={`${linkStyle} ${!showMenu && "rotate-45 translate-y-1"}`}
         ></div>
+        <div className={`${linkStyle} ${!showMenu && "hidden"}`}></div>
         <div
-          className={`w-9 h-1 rounded-lg bg-colors-darkPurple mx-2 duration-300 ${
-            !showMenu && "hidden"
-          }`}
-        ></div>
-        <div
-          className={`w-9 h-1 rounded-lg bg-colors-darkPurple mx-2 duration-300 ${
-            !showMenu && "-rotate-45 -translate-y-2"
-          }`}
+          className={`${linkStyle} ${!showMenu && "-rotate-45 -translate-y-2"}`}
         ></div>
       </div>
     </>

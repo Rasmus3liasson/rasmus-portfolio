@@ -39,7 +39,7 @@
     @apply w-12 h-auto fill-colors-purlpe;
   }
   .container {
-    @apply bg-colors-white dark:bg-colors-black rounded-t-xl rounded-b-xl shadow-container dark:shadow-darkContainer px-24 py-5 mb-28 text-center w-5/6 dark:text-colors-white;
+    @apply bg-colors-white dark:bg-colors-black rounded-t-xl rounded-b-xl shadow-container dark:shadow-darkContainer px-24 py-8 mb-28 text-center w-5/6 dark:text-colors-white;
   }
   .container-purple {
     @apply bg-colors-white dark:bg-colors-black rounded-t-xl rounded-b-xl shadow-purpleContainer dark:shadow-purpleContainer px-24 py-5 mb-28 text-center w-5/6 dark:text-colors-white;
@@ -63,7 +63,7 @@
   }
 
   .input {
-    @apply bg-colors-inputField text-colors-black w-64 rounded-3xl px-3 py-0.5 shadow-lg lg:w-80 lg:h-9 italic focus:scale-103 duration-200 focus:outline-none;
+    @apply bg-colors-inputField text-colors-black rounded-3xl px-3 py-0.5 shadow-lg lg:w-80 lg:h-9 italic focus:scale-103 duration-200 focus:outline-none w-full;
   }
   .animate-start {
     @apply opacity-0 transform translate-y-5 transition-opacity duration-700 ease-in-out;

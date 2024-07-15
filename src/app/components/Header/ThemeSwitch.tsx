@@ -33,7 +33,7 @@ export default function ThemeSwitch() {
 
   return (
     <>
-      <div className="flex items-center border-2 border-colors-darkPurple rounded-2xl p-1 shadow-md cursor-pointer">
+      <div className="flex items-center border-2 border-colors-purlpe rounded-2xl p-1 shadow-md cursor-pointer">
         <div
           className="flex"
           onClick={() => {
@@ -49,7 +49,7 @@ export default function ThemeSwitch() {
           />
 
           <span
-            className={`w-5 h-5 rounded-full bg-colors-darkPurple relative duration-200 ${
+            className={`w-5 h-5 rounded-full bg-colors-purlpe relative duration-200 ${
               !themeIcon ? "-right-5" : "right-5"
             }`}
           ></span>

@@ -47,30 +47,31 @@ export default function Projects() {
   const isSpringBootVisible = useIntersectionObserver(springBootRef);
 
   return (
-    <div id="projects" className="flex items-center justify-center">
-      <div className="container flex flex-col items-center justify-center gap-9 px-6">
-        <h3 className="text-4xl">Mina Projekt</h3>
-        <div className="flex flex-col lg:grid lg:grid-cols-3 justify-between gap-10 px-3">
-          <div
-            className={`animate-start ${isWebShopVisible && "show-project"}`}
-            ref={webShopRef}
-          >
-            <WebShop />
-          </div>
-          <div
-            className={`animate-start ${isAlcoholVisible && "show-project"}`}
-            ref={alcoholRef}
-          >
-            <AlcoholCheck />
-          </div>
-          <div
-            className={`animate-start ${isSpringBootVisible && "show-project"}`}
-            ref={springBootRef}
-          >
-            <SpringBoot />
-          </div>
+    <section
+      id="projects"
+      className="container flex flex-col items-center justify-center gap-9 px-6"
+    >
+      <h3 className="text-4xl">Mina Projekt</h3>
+      <div className="flex flex-col lg:grid lg:grid-cols-3 justify-between gap-10 px-3">
+        <div
+          className={`animate-start ${isWebShopVisible && "show-project"}`}
+          ref={webShopRef}
+        >
+          <WebShop />
+        </div>
+        <div
+          className={`animate-start ${isAlcoholVisible && "show-project"}`}
+          ref={alcoholRef}
+        >
+          <AlcoholCheck />
+        </div>
+        <div
+          className={`animate-start ${isSpringBootVisible && "show-project"}`}
+          ref={springBootRef}
+        >
+          <SpringBoot />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
