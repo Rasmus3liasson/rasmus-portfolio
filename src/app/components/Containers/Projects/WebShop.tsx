@@ -16,7 +16,7 @@ export default function WebShop() {
     "Docker compose"
   ];
   const githubLink = "https://github.com/Rasmus3liasson/webshop";
-  const deployedLink = "https://webshopclothes.netlify.app/";
+  const deployedLink = "https://webshop-phi-lime.vercel.app/";
 
   return (
     <section>
