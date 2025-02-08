@@ -25,6 +25,10 @@ export default function Knowledge() {
         <h3 className="text-4xl">Kunskaper</h3>
         <div className="mt-8 flex flex-wrap justify-center items-center gap-6 sm:gap-9 md:gap-20">
           {renderProgrammingIcons(
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+            false
+          )}
+          {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
             false
           )}
@@ -51,10 +55,7 @@ export default function Knowledge() {
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
             false
           )}
-          {renderProgrammingIcons(
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
-            false
-          )}
+
           {renderProgrammingIcons(
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
             false
